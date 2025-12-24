@@ -1,21 +1,23 @@
 ﻿using System;
 
-int result = Fibonacci(5);
-Console.WriteLine(result);
-
-static int Fibonacci(int n)
+class ArrayExample
 {
-    Console.WriteLine("The output is: ");
-    int n1 = 0;
-    int n2 = 1;
-    int sum;
-
-    for (int i = 2; i <= n; i++)
+    static void Main()
     {
-        sum = n1 + n2;
-        n1 = n2;
-        n2 = sum;
+        char[] letters = { 'f', 'r', 'e', 'd', ' ', 's', 'm', 'i', 't', 'h' };
+        string name = "";
+        int[] a = new int[10];
+        for (int i = 0; i < letters.Length; i++)
+        {
+            name += letters[i];
+            a[i] = i + 1;
+            SendMessage(name, a[i]);
+        }
+        Console.ReadKey();
     }
 
-    return n == 0 ? n1 : n2;
+    static void SendMessage(string name, int msg)
+    {
+        Console.WriteLine("Hello, " + name + "! Count to " + msg);
+    }
 }
