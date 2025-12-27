@@ -27,7 +27,7 @@
 
         <GroupBox Header="Схема начисления %" Grid.Row="0" Grid.Column="2" Grid.RowSpan="3" Margin="10,10,10,0" Width="180" Height="100">
             <StackPanel>
-                <RadioButton x:Name="rbSimple" Content="простые проценты" IsChecked="True" Margin="5"/>
+                <RadioButton x:Name="rbSimple" Content="простые проценты" Margin="5"/>
                 <RadioButton x:Name="rbCompound" Content="сложные проценты" Margin="5"/>
             </StackPanel>
         </GroupBox>
